@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprende CR — Educación en Costa Rica</title>
+  <meta name="description" content="Clases en vivo, tutores cercanos y programas para estudiantes de todo Costa Rica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVEGACIÓN GLOBAL -->
+  <nav class="gnav" aria-label="Principal">
+    <div class="gnav__inner">
+      <a href="#inicio" class="gnav__logo" aria-label="Aprende CR">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 12v4c0 1.5 2.2 3 5 3s5-1.500 5-3v-4"/></svg>
+      </a>
+      <a href="#programas">Programas</a>
+      <a href="#metodo">Método</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- NAVEGACIÓN LOCAL -->
+  <div class="lnav" id="lnav">
+    <div class="lnav__inner">
+      <strong class="lnav__title">Aprende CR</strong>
+      <div class="lnav__actions">
+        <a href="#programas" class="pill pill--outline">Explorar</a>
+        <a href="#contacto" class="pill pill--blue">Inscribirme</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <p class="status">Nuevo</p>
+      <p class="kicker">Aprende CR</p>
+      <h1 class="hero__title">Aprender,<br />sin límites.</h1>
+      <p class="hero__copy">Clases en vivo, tutores cercanos y programas para todo el país.</p>
+      <div class="hero__links">
+        <a href="#contacto" class="link">Reservar una clase de prueba ›</a>
+        <a href="#metodo" class="link">Ver cómo funciona ›</a>
+      </div>
+
+      <div class="stage">
+        <!-- Render plano de una tablet con una lección -->
+        <svg class="device" viewBox="0 0 900 560" role="img" aria-label="Tablet mostrando una clase en vivo">
+          <rect x="40" y="20" width="820" height="600" rx="56" fill="#1d1d1f"/>
+          <rect x="64" y="44" width="772" height="552" rx="36" fill="#ffffff"/>
+          <rect x="64" y="44" width="200" height="552" rx="36" fill="#f5f5f7"/>
+          <rect x="228" y="44" width="36" height="552" fill="#f5f5f7"/>
+          <circle cx="104" cy="96" r="14" fill="#0071e3"/>
+          <rect x="130" y="88" width="90" height="16" rx="8" fill="#1d1d1f"/>
+          <rect x="92" y="150" width="140" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="92" y="184" width="110" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="92" y="218" width="130" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="92" y="252" width="100" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="300" y="80" width="500" height="290" rx="24" fill="#1d1d1f"/>
+          <circle cx="550" cy="225" r="44" fill="#ffffff"/>
+          <path d="M538 202l36 23-36 23z" fill="#1d1d1f"/>
+          <rect x="300" y="396" width="320" height="22" rx="11" fill="#1d1d1f"/>
+          <rect x="300" y="432" width="440" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="300" y="460" width="380" height="14" rx="7" fill="#d6d6d6"/>
+          <rect x="300" y="512" width="150" height="40" rx="20" fill="#0071e3"/>
+          <rect x="472" y="512" width="110" height="40" rx="20" fill="none" stroke="#86868b" stroke-width="2"/>
+        </svg>
+
+        <div class="callout">
+          <div>
+            <strong>Primera clase de prueba</strong>
+            <span>Sin compromiso. Decide después.</span>
+          </div>
+          <a href="#contacto" class="pill pill--blue">Reservar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANCLAS -->
+    <nav class="anchors" aria-label="En esta página">
+      <a href="#destacados" class="is-active">Destacados</a>
+      <a href="#programas">Programas</a>
+      <a href="#metodo">Método</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- DESTACADOS (carrusel) -->
+    <section class="band" id="destacados">
+      <div class="wrap">
+        <div class="band__head">
+          <h2>Lo más destacado.</h2>
+          <a href="#programas" class="link">Ver todos los programas ›</a>
+        </div>
+      </div>
+
+      <div class="carousel" id="carousel" tabindex="0" aria-label="Destacados">
+        <article class="slide">
+          <h3>Clases en vivo,<br />a tu ritmo.</h3>
+          <svg viewBox="0 0 400 220" aria-hidden="true">
+            <rect x="70" y="20" width="260" height="150" rx="14" fill="#1d1d1f"/>
+            <rect x="82" y="32" width="236" height="126" rx="6" fill="#ffffff"/>
+            <circle cx="200" cy="95" r="26" fill="#0071e3"/>
+            <path d="M192 82l22 13-22 13z" fill="#ffffff"/>
+            <rect x="30" y="176" width="340" height="12" rx="6" fill="#d6d6d6"/>
+          </svg>
+        </article>
+        <article class="slide">
+          <h3>Tutores que<br />te conocen.</h3>
+          <svg viewBox="0 0 400 220" aria-hidden="true">
+            <rect x="40" y="30" width="200" height="80" rx="28" fill="#1d1d1f"/>
+            <rect x="70" y="62" width="120" height="12" rx="6" fill="#ffffff"/>
+            <rect x="160" y="124" width="200" height="80" rx="28" fill="#0071e3"/>
+            <rect x="190" y="156" width="120" height="12" rx="6" fill="#ffffff"/>
+          </svg>
+        </article>
+        <article class="slide">
+          <h3>De Guanacaste<br />a Limón.</h3>
+          <svg viewBox="0 0 400 220" aria-hidden="true">
+            <path d="M40 90c40-40 100-60 160-40s90 20 130 50-10 70-60 80-90 10-140-10S10 120 40 90z" fill="#f5f5f7"/>
+            <circle cx="120" cy="90" r="9" fill="#0071e3"/>
+            <circle cx="210" cy="120" r="9" fill="#1d1d1f"/>
+            <circle cx="300" cy="140" r="9" fill="#b64400"/>
+            <path d="M120 90L210 120L300 140" fill="none" stroke="#86868b" stroke-width="2" stroke-dasharray="4 6"/>
+          </svg>
+        </article>
+        <article class="slide">
+          <h3>Prepárate para<br />Bachillerato.</h3>
+          <svg viewBox="0 0 400 220" aria-hidden="true">
+            <rect x="120" y="14" width="160" height="196" rx="16" fill="#1d1d1f"/>
+            <rect x="136" y="30" width="128" height="164" rx="8" fill="#ffffff"/>
+            <rect x="152" y="54" width="96" height="10" rx="5" fill="#d6d6d6"/>
+            <rect x="152" y="80" width="70" height="10" rx="5" fill="#d6d6d6"/>
+            <path d="M156 130l16 16 36-40" fill="none" stroke="#0071e3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </article>
+      </div>
+
+      <div class="controls" role="group" aria-label="Control del carrusel">
+        <div class="controls__pill">
+          <div class="dots" id="dots"></div>
+          <button id="playBtn" class="playbtn" aria-label="Pausar carrusel"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMAS -->
+    <section class="section wrap" id="programas">
+      <h2 class="section__title">Programas para cada etapa.</h2>
+      <div class="filters" role="tablist" aria-label="Filtrar programas">
+        <button class="pill pill--outline is-active" data-filter="todos">Todos</button>
+        <button class="pill pill--outline" data-filter="escolar">Escolar</button>
+        <button class="pill pill--outline" data-filter="colegio">Colegio</button>
+        <button class="pill pill--outline" data-filter="adultos">Adultos</button>
+      </div>
+
+      <ul class="rows" id="rows">
+        <li data-cat="escolar">
+          <div><p class="status">Escolar</p><h3>Lectoescritura y matemática</h3></div>
+          <p>Refuerzo para primaria con lectura guiada, juegos y tutorías semanales.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+        <li data-cat="escolar">
+          <div><p class="status">Escolar</p><h3>Ciencias y naturaleza</h3></div>
+          <p>La biodiversidad de Costa Rica explicada con experimentos y observación.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+        <li data-cat="colegio">
+          <div><p class="status">Colegio</p><h3>Preparación para Bachillerato</h3></div>
+          <p>Español, matemática, estudios sociales y ciencias con práctica guiada.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+        <li data-cat="colegio">
+          <div><p class="status">Colegio</p><h3>Inglés conversacional</h3></div>
+          <p>Grupos pequeños para practicar y ganar confianza al hablar.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+        <li data-cat="adultos">
+          <div><p class="status">Adultos</p><h3>Competencias digitales</h3></div>
+          <p>Herramientas de oficina, internet seguro y primeros pasos en programación.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+        <li data-cat="adultos">
+          <div><p class="status">Adultos</p><h3>Educación abierta</h3></div>
+          <p>Completa tus estudios con acompañamiento y horarios flexibles.</p>
+          <a href="#contacto" class="link">Más información ›</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- MÉTODO (editorial) -->
+    <section class="editorial" id="metodo">
+      <div class="wrap editorial__grid">
+        <div class="editorial__text">
+          <p class="kicker kicker--sm">Nuestro método</p>
+          <h2>Un plan claro.<br />Un paso a la vez.</h2>
+          <p class="body">Cada estudiante avanza con metas semanales realistas y revisiones frecuentes. Sin saturación: una idea por vez, bien explicada.</p>
+
+          <ol class="steps" id="steps">
+            <li class="is-open">
+              <button aria-expanded="true"><span>01</span> Diagnóstico</button>
+              <p>Conocemos tu nivel con una prueba breve y una conversación con un tutor.</p>
+            </li>
+            <li>
+              <button aria-expanded="false"><span>02</span> Plan personal</button>
+              <p>Definimos metas semanales con clases en vivo y práctica a tu ritmo.</p>
+            </li>
+            <li>
+              <button aria-expanded="false"><span>03</span> Seguimiento</button>
+              <p>Revisamos avances cada mes y ajustamos el plan contigo y tu familia.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="editorial__media" aria-hidden="true">
+          <svg viewBox="0 0 700 560" preserveAspectRatio="xMinYMid slice">
+            <rect width="700" height="560" fill="#f5f5f7"/>
+            <circle cx="520" cy="130" r="56" fill="#f5c542"/>
+            <path d="M40 420L250 150l60 0L520 420z" fill="#2f6b4f"/>
+            <path d="M250 150l60 0 24 36-108 0z" fill="#86868b"/>
+            <path d="M-20 440c120-70 240-70 360-20s240 40 400-30V560H-20z" fill="#4c9a6a"/>
+            <path d="M-20 500c140-50 260-40 380 0s240 20 360-30V560H-20z" fill="#1d1d1f"/>
+            <circle cx="150" cy="470" r="6" fill="#f5c542"/>
+            <circle cx="260" cy="490" r="6" fill="#ffffff"/>
+            <circle cx="390" cy="474" r="6" fill="#f5c542"/>
+            <circle cx="520" cy="492" r="6" fill="#ffffff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="band band--contact" id="contacto">
+      <div class="wrap contact">
+        <div>
+          <h2>Cuéntanos qué quieres aprender.</h2>
+          <p class="body body--muted">Te respondemos con una propuesta personalizada.</p>
+        </div>
+
+        <form class="form" id="form" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" name="nombre" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Correo electrónico</span>
+            <input type="email" name="correo" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Programa de interés</span>
+            <select name="programa">
+              <option>Escolar</option>
+              <option>Colegio</option>
+              <option>Adultos</option>
+            </select>
+          </label>
+          <button type="submit" class="pill pill--blue pill--lg">Enviar</button>
+          <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>Costa Rica. Esta página es un ejemplo de diseño; los textos y programas son de muestra.</p>
+      <hr />
+      <div class="footer__row">
+        <span>© <span id="year"></span> Aprende CR. Todos los derechos reservados.</span>
+        <span class="footer__links">
+          <a href="#programas">Programas</a>
+          <a href="#metodo">Método</a>
+          <a href="#contacto">Contacto</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
